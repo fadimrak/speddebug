@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "sped-debug",
+  "version": "1.0.0",
+  "name": "Sped Debug",
+  "description": "Sped Debug.",
+  "authors": ["Dorysoy"],
+  "license": "MIT",
+  "custom": {
+    "meteor-client:color": "64,156,255"
+  },
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "com.basedebug.SpedDebugAddon"
+    ]
+  },
+  "mixins": [
+    "base-debug.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21.11",
+    "meteor-client": "*"
+  }
+}
